@@ -1,5 +1,7 @@
+/* Reset box sizing */
 * { box-sizing: border-box; }
 
+/* Body styles */
 body {
   margin: 0;
   font-family: "Segoe UI", Roboto, Arial, sans-serif;
@@ -7,21 +9,37 @@ body {
   color: #1f2933;
 }
 
+/* Header */
 header {
   background: linear-gradient(135deg, #0f172a, #020617);
   color: white;
   padding: 70px 20px;
+  text-align: center;
 }
 
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+header p {
+  margin-top: 10px;
+  font-size: 1.1rem;
+}
+
+/* Container for main content */
 .container {
   max-width: 900px;
   margin: auto;
+  padding: 0 20px;
 }
 
+/* Main section */
 main {
-  padding: 40px 20px;
+  padding: 40px 0;
 }
 
+/* Card component */
 .card {
   background: white;
   border-radius: 10px;
@@ -32,8 +50,20 @@ main {
 
 .card h2 {
   margin-top: 0;
+  font-size: 1.6rem;
+  color: #1f2933;
 }
 
+.card p, .card ul {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.card ul li {
+  margin-bottom: 8px;
+}
+
+/* Download section */
 .download {
   text-align: center;
 }
@@ -47,15 +77,20 @@ main {
   text-decoration: none;
   border-radius: 6px;
   font-weight: 600;
+  font-size: 1rem;
+  transition: background 0.3s ease;
 }
 
 .button:hover {
   background: #1d4ed8;
+  cursor: pointer;
 }
 
+/* Footer */
 footer {
   text-align: center;
   padding: 20px;
   font-size: 14px;
   color: #64748b;
+  border-top: 1px solid #e5e7eb;
 }
